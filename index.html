@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PIG GAME</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <section>
-        <h2 class="player player-0">Player 1</h2>
-        <p class="name name-0"</p>
+      <section class="player player-0">
+        <h2 class="name name-0">Player 1</h2>
+        <p class="score score-0">24</p>
         <div class="current--box">
-          <p class="current">Current</p>
-          <p class="current-score current-1"></p>
+          <p class="current-text">Current</p>
+          <p class="current-score current-1">0</p>
         </div>
       </section>
-      <section>
-        <h2 class="player player-1">Player 2</h2>
-        <p class="name name-1"</p>
+      <section class="player player-1">
+        <h2 class="name name-1">Player 2</h2>
+        <p class="score score-1">36</p>
         <div class="current--box">
-          <p class="current">Current</p>
-          <p class="current-score current-1"></p>
+          <p class="current-text">Current</p>
+          <p class="current-score current-1">0</p>
         </div>
       </section>
+
+      <img src="img/dice-1.png" alt="Dice" class="dice" />
+      <button class="btn btn-new">New game</button>
+      <button class="btn btn-roll">Roll dice</button>
+      <button class="btn btn-hold">Hold</button>
     </main>
     <script src="script.js"></script>
   </body>

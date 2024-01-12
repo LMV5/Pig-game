@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Tektur", sans-serif;
+  font-weight: 400;
+  background-image: url(img/bg-img.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fffde7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100rem;
+  height: 65rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 13rem rgba(248, 246, 246, 0.5);
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+  z-index: 55;
+}
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.348);
+}
+
+.player-active .name {
+  font-weight: 900;
+}
+
+.player-active .score {
+  font-weight: 900;
+}
+
+.name {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  margin-bottom: auto;
+  color: #25f4ff;
+}
+
+.current--box {
+  background-color: rgb(85, 84, 85, 0.5);
+  width: 50%;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+  z-index: 999;
+}
+
+.current-text {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #fffde7;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+.dice {
+  position: absolute;
+  left: 45%;
+  top: 10rem;
+  height: 10rem;
+  transform: translateY(100%);
+}
+
+.btn {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #fffde7;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: rgba(57, 38, 235, 0.753);
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.7rem 2.5rem;
+  backdrop-filter: blur(10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-new {
+  left: 80%;
+  top: 4rem;
+}
+
+.btn-roll {
+  top: 45rem;
+}
+
+.btn-hold {
+  top: 52rem;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
