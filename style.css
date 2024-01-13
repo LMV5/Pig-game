@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Tektur", sans-serif;
   font-weight: 400;
-  background-image: url(img/bg-img.webp);
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fffde7;
@@ -26,9 +26,9 @@ body {
 main {
   width: 100rem;
   height: 65rem;
-  background-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 13rem rgba(248, 246, 246, 0.5);
+  background-color: rgba(255 255 255 / 5%);
+  backdrop-filter: blur(7px);
+  /* box-shadow: 0 0 13rem rgba(248, 246, 246, 0.5); */
   border-radius: 30px;
   display: flex;
   position: relative;
@@ -45,7 +45,7 @@ main {
 }
 
 .player-active {
-  background-color: rgba(255, 255, 255, 0.348);
+  background-color: rgba(255, 255, 255, 0.184);
 }
 
 .player-active .name {
@@ -58,6 +58,7 @@ main {
 
 .name {
   font-size: 4rem;
+  color: rgb(250, 247, 73);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 300;
@@ -65,7 +66,7 @@ main {
   position: relative;
 }
 
-.score {
+.totalScore {
   font-size: 8rem;
   font-weight: 300;
   margin-bottom: auto;
@@ -73,7 +74,7 @@ main {
 }
 
 .current--box {
-  background-color: rgb(85, 84, 85, 0.5);
+  background-color: rgba(76, 16, 76, 0.5);
   width: 50%;
   border-radius: 5px;
   padding: 2rem;
@@ -103,19 +104,19 @@ main {
 
 .btn {
   position: absolute;
-  background: none;
+  /* background: none; */
   border: none;
-  color: #fffde7;
+  /* color: #fffde7; */
   font-family: inherit;
   font-size: 1.8rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
-  background-color: rgba(57, 38, 235, 0.753);
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
   padding: 0.7rem 2.5rem;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
+  background: linear-gradient(to right, rgb(69, 246, 24), rgb(250, 247, 73));
   left: 50%;
   transform: translateX(-50%);
 }
@@ -139,4 +140,69 @@ main {
 
 .btn:active {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, 3px);
+}
+
+.hidden {
+  display: none;
+}
+
+.circle-1 {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(37, 244, 255), rgb(247, 99, 210));
+  position: absolute;
+  right: 12%;
+  top: 4%;
+}
+
+.circle-2 {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(69, 246, 24), rgb(250, 247, 73));
+  position: absolute;
+  left: 14%;
+  top: 14%;
+}
+
+.circle-3 {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(245, 6, 62), rgb(34, 113, 239));
+  position: absolute;
+  left: 16%;
+  bottom: 5%;
+}
+
+.circle-4 {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(250, 247, 73), rgb(133, 14, 245));
+  position: absolute;
+  left: 40%;
+  bottom: 60%;
+}
+
+.circle-5 {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(250, 247, 73), rgb(245, 6, 62));
+  position: absolute;
+  top: 50%;
+  left: 67%;
+}
+
+.circle-6 {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(69, 246, 24), rgb(34, 113, 239));
+  position: absolute;
+  right: 36%;
+  bottom: 1%;
 }
