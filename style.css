@@ -108,9 +108,7 @@ main {
 
 .btn {
   position: absolute;
-  /* background: none; */
   border: none;
-  /* color: #fffde7; */
   font-family: inherit;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -209,4 +207,101 @@ main {
   position: absolute;
   right: 36%;
   bottom: 1%;
+}
+
+@media (max-width: 50rem) {
+  main {
+    width: 65rem;
+    height: 55rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .totalScore {
+    font-size: 6rem;
+    font-weight: 150;
+  }
+
+  .current--box {
+    width: 100%;
+  }
+
+  .current-text {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .current-score {
+    font-size: 3rem;
+  }
+
+  .dice {
+    left: 45%;
+    top: 20rem;
+    height: 6rem;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media (max-width: 41.25rem) {
+  main {
+    width: 50rem;
+    height: 40rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .totalScore {
+    font-size: 3rem;
+  }
+
+  .player {
+    flex: 50%;
+    padding: 8rem;
+  }
+
+  .dice {
+    left: 50%;
+    top: 10rem;
+    height: 4rem;
+  }
+
+  .btn-new {
+    left: 55%;
+    top: 3rem;
+  }
+
+  .btn-roll {
+    top: 25rem;
+  }
+
+  .btn-hold {
+    top: 30rem;
+  }
+
+  .current--box {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.2rem;
+  }
+
+  .current-text {
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  .current-score {
+    font-size: 2rem;
+  }
 }
