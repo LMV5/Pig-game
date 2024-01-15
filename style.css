@@ -56,6 +56,10 @@ main {
   font-weight: 900;
 }
 
+.player-winner {
+  background-color: rgba(143, 247, 91, 0.5);
+}
+
 .name {
   font-size: 4rem;
   color: rgb(250, 247, 73);
