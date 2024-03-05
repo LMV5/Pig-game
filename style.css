@@ -253,11 +253,11 @@ main {
 @media (max-width: 41.25rem) {
   main {
     width: 50rem;
-    height: 40rem;
+    height: 35rem;
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     text-align: center;
   }
@@ -278,16 +278,16 @@ main {
   }
 
   .btn-new {
-    left: 55%;
+    left: 80%;
     top: 3rem;
   }
 
   .btn-roll {
-    top: 25rem;
+    top: 22rem;
   }
 
   .btn-hold {
-    top: 30rem;
+    top: 25rem;
   }
 
   .current--box {
